@@ -5,5 +5,6 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'unicorn/throw-new-error': 'off',
+    'antfu/top-level-function': 'off',
   },
 }

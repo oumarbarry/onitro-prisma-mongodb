@@ -1,5 +1,5 @@
 export default () => {
-  function hello() { return 'HELLO' }
+  const hello = () => 'HELLO'
 
   return { hello }
 }

@@ -1,19 +1,13 @@
-import { defineNitroConfig } from 'nitropack/config'
-
 export default defineNitroConfig({
-  srcDir: 'src',
-  noPublicDir: true,
-  errorHandler: '~/errorHandler',
+  srcDir: "src",
 
   routeRules: {
-    '/api/**': { cors: true },
+    "/api/**": { cors: true },
   },
 
   imports: {
-    dirs: ['./src/composables/**'],
     presets: [
-      { from: 'zod', imports: ['z'] },
-      { from: 'h3-zod', imports: ['useValidatedQuery', 'useValidatedBody'] },
+      { from: "zod", imports: ["z"] },
     ],
   },
 })
